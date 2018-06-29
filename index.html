@@ -13,11 +13,11 @@
 	<title></title>
 </head>
 <body ng-app="lCheckerApp">
-	<div class="container" ng-controller="lCheckerController">
-		<h1>Hello World</h1>
+	<div class="container text-center" ng-controller="lCheckerController">
+		<h1>Lunch Checker</h1>
 		<div class="form-inline">
 			<div class="form-group">
-				<input class="form-control" type="text" placeholder="List comma separated values" ng-model="input">
+				<input class="form-control" type="text" placeholder="List comma separated values" ng-model="input" style="border: 1px solid {{color}};" ng-focus="clearInput()">
 				<button class="btn btn-default" ng-click="displayOutput()">Determine</button>
 			</div>
 			<br />
