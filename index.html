@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script text="type/javascript" src="angular.min.js"></script>
+	<script text="text/javascript" src="app.js"></script>
+	<style type="text/css">
+		.message {
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+	</style>
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<title></title>
+</head>
+<body ng-app="lCheckerApp">
+	<div class="container" ng-controller="lCheckerController">
+		<h1>Hello World</h1>
+		<div class="form-inline">
+			<div class="form-group">
+				<input class="form-control" type="text" placeholder="List comma separated values" ng-model="input">
+				<button class="btn btn-default" ng-click="displayOutput()">Determine</button>
+			</div>
+			<br />
+			<div class="form-group message" style="color: {{color}}">
+				{{message}}
+			</div>
+		</div>
+	</div>
+</body>
+</html>
